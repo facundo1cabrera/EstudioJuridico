@@ -1,15 +1,9 @@
-import Link from 'next/link';
-
-const ServiceItem = ({ item }) => {
+const ServiceItem = (props) => {
   return (
-    <>
-      <div className="servicioitem">
-        <p className="serviceitemtitle">{item}</p>
-        <Link href="/contacto">
-          <a>Contacto</a>
-        </Link>
-      </div>
-    </>
+    <div className="serviceItem">
+      <Image src={props.srcImage} className="serviceItem-image" layaout="fill"/>
+      <p>{props.serviceType}</p>
+    </div>
   );
 };
 

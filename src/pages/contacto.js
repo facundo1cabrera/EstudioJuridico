@@ -1,13 +1,11 @@
+import Form from '../components/Form';
 import NavBar from '../components/NavBar';
-import Contact from '../containers/Contact';
 
-const contacto = () => {
+export default function Home() {
   return (
-    <>
-      <NavBar />
-      <Contact />
-    </>
+      <>
+        <NavBar />
+        <Form />
+      </>
   );
-};
-
-export default contacto;
+}
